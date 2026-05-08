@@ -1,83 +1,81 @@
 # ⚖️ Web Equality - RIKO Parts Internal System
 
-Sistem manajemen kesetaraan produk dan inventaris terintegrasi yang dirancang khusus untuk operasional **RIKO Parts Indonesia**. Aplikasi ini mempermudah pemetaan hubungan antar item (*item equality*), pengelolaan katalog produk, serta pemantauan data penjualan secara real-time.
 <p align="left">
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" />
   <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Algolia-003DFF?style=for-the-badge&logo=algolia&logoColor=white" />
 </p>
+
+An integrated product equality management system designed specifically for **Web Equality** operations. This application simplifies the mapping of relationships between items (*item equality*), catalog management, and real-time activity monitoring through a modern interface.
+
 ---
 
 ## 🛠️ Tech Stack
 
 **Frontend:**
 - **Framework:** React.js (Vite)
-- **Styling:** Tailwind CSS & Shadcn/UI (Dark Glassmorphism Theme)
+- **Styling:** CSS V3
 - **State Management:** React Context API
-- **Search Engine:** MeiliSearch Integration (Fast Search)
+- **Search Engine:** **Algolia Search** (High-performance product discovery)
 - **Iconography:** Lucide React
 
 **Backend:**
 - **Runtime:** Node.js & Express
-- **Database:** PostgreSQL (Supabase Management)
-- **Real-time:** PostgreSQL Listeners
-- **Authentication:** Firebase Auth
+- **Cloud Service:** **Firebase Services** (Real-time Data Handling)
+- **Authentication:** Firebase Auth & Firebase Admin SDK
+- **Search Integration:** Algolia API Synchronization
 
 ---
 
-## 🔍 Fitur Utama & Dokumentasi
+## 🔍 Key Features & Documentation
 
-### 1. Dashboard Operasional
-Ringkasan aktivitas sistem dan statistik produk dalam format visual yang informatif.
+### 1. Operational Dashboard
+A summary of system activities and product statistics presented in an informative visual format.
 <p align="center">
-  <img src="public/assets/preview/activity.png" width="800" alt="Dashboard Activity"/>
+  <img src="frontend/public/assets/preview/activity.png" width="800" alt="Dashboard Activity"/>
 </p>
 
-### 2. Manajemen Kesetaraan (Equality Products)
-Fitur inti untuk menghubungkan produk-produk yang memiliki spesifikasi setara. Dilengkapi dengan pencarian berbasis MeiliSearch untuk performa instan.
+### 2. Equality Products Management
+The core feature to link products with equivalent specifications. Powered by **Algolia** to provide instant search results even with large product databases.
 <p align="center">
-  <img src="public/assets/preview/equal.png" width="800" alt="Equality List"/>
+  <img src="frontend/public/assets/preview/equal.png" width="800" alt="Equality List"/>
 </p>
 
-### 3. Pengolahan Data Produk
-Halaman intuitif untuk menambah dan mengubah data kesetaraan dengan antarmuka berbasis modal yang bersih.
+### 3. Product Data Processing
+An intuitive interface for managing equality data with a seamless user experience using glassmorphism components.
 <p align="center">
   <img src="public/assets/preview/add_equal.png" width="400" alt="Add Equality"/>
-  <img src="public/assets/preview/edit_equal.png" width="400" alt="Edit Equality"/>
+  <img src="frontend/public/assets/preview/edit_equal.png" width="400" alt="Edit Equality"/>
 </p>
 
-### 4. Analisis Penjualan
-Memantau tren penjualan produk terkait untuk sinkronisasi inventaris yang lebih akurat.
+### 4. Sales Analysis
+Tracking related sales data to ensure accurate stock synchronization across departments.
 <p align="center">
-  <img src="public/assets/preview/sales.png" width="800" alt="Sales Monitoring"/>
+  <img src="frontend/public/assets/preview/sales.png" width="800" alt="Sales Monitoring"/>
 </p>
 
 ---
 
-## ⚙️ Persiapan & Instalasi
+## ⚙️ Installation & Setup
 
-### Prasyarat
-- Node.js (Versi 18 ke atas)
-- PostgreSQL Instance
-- Firebase Project (untuk Autentikasi)
+### Prerequisites
+- Node.js (Version 18 or higher)
+- Firebase Project & Service Account Key
+- Algolia Application ID & Admin API Key
 
-### Struktur Penting
-1. **Frontend Env:** Konfigurasi `.env` di folder `frontend` untuk koneksi API dan Firebase.
-2. **Backend Env:** Konfigurasi `.env` di folder `backend` untuk kredensial database dan MeiliSearch.
+### Getting Started
 
-### Langkah Menjalankan Aplikasi
-
-**1. Jalankan Backend:**
+**1. Setup Backend:**
 ```bash
 cd backend
 npm install
 node app.js
 ```
 
-**2. Jalankan Frontend:**
+**1. Setup Frontend:**
 ```bash
 cd frontend
 npm install
