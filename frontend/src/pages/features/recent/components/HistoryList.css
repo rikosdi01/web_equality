@@ -1,0 +1,92 @@
+.recent-item {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-left: 6px solid #ccc;
+    border-right: 1px solid #ececec;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+}
+
+.recent-item-date {
+    color: grey;
+    font-weight: 600;
+}
+
+.recent-item.Add,
+.recent-item.AddSub {
+    border-left-color: #28a745; /* Hijau untuk penambahan */
+}
+
+.recent-item.Edit,
+.recent-item.EditSub {
+    border-left-color: #ffc107; /* Kuning untuk edit */
+}
+
+.recent-item.Delete,
+.recent-item.DeleteSub {
+    border-left-color: #dc3545; /* Merah untuk hapus */
+}
+
+.recent-item.Individual {
+    border-left-color: #007bff; /* Biru tua untuk Individual */
+}
+
+.recent-item strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #666;
+}
+
+.induk-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.sub-induk-name {
+    color: #2c7be5; /* biru keunguan, lebih jelas */
+    font-weight: 600;
+}
+
+.tersendiri {
+    color: #e63946;
+    font-weight: 600;
+}
+
+.user {
+    color: #6f42c1;
+    font-weight: 600;
+}
+
+.acc {
+    color: #fd7e14;
+    font-weight: 600;
+}
+
+.deskripsi {
+    color: #2e8b57; /* sea green */
+    font-weight: 600;
+}
+
+.het {
+    color: #d63384; /* pink keunguan */
+    font-weight: 600;
+}
+
+.model {
+    color: #20c997; /* turquoise / teal soft */
+    font-weight: 600;
+}
+
+.penting {
+    color: #dc3545; /* merah tegas */
+    font-weight: 600;
+}
+
+.spesifikasi {
+    color: #0d6efd; /* biru bootstrap */
+    font-weight: 600;
+}

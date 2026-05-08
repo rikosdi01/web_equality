@@ -1,0 +1,133 @@
+.equality-products-list {
+    position: relative;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 370px;
+    cursor: pointer;
+    font-size: 15px;
+    height: 100%;
+}
+
+.equality-products-list.expanded {
+    padding-bottom: 40px;
+}
+
+.equality-products-list-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    right: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #666;
+}
+
+.equality-products-icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    bottom: 10px;
+    right: 20px;
+}
+
+.equality-products-icon-edit,
+.equality-products-icon-trash {
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.equality-products-icon-edit {
+    color: rgb(209, 165, 21);
+}
+
+.equality-products-icon-edit:hover {
+    color: rgb(171, 136, 21);
+}
+
+.equality-products-icon-trash {
+    color: rgb(224, 2, 2);
+}
+
+.equality-products-icon-trash:hover {
+    color: rgb(162, 3, 3);
+}
+
+.equality-products-type {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.equality-products-date {
+    margin-top: 2px;
+    font-size: 14px;
+    color: #666;
+}
+
+.equality-products-important {
+    font-weight: 600;
+    margin-top: 5px;
+    color: #d9534f;
+}
+
+.equality-products-list-expanded {
+    margin-top: 20px;
+}
+
+.equality-products-list-subtitle {
+    font-weight: 500;
+}
+
+.equality-products-list-details {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 20px;
+}
+
+.equality-products-individual {
+    display: inline-flex;
+    margin-bottom: 2px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: 1px solid rgb(125, 0, 0);
+    color: rgb(125, 0, 0);
+}
+
+.equality-products-list-item {
+  position: relative;
+  z-index: 10;  /* Tooltip yang dipilih akan tetap di atas elemen lain */
+}
+
+
+.skeleton {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin: 8px 0;
+    animation: shimmer 1.5s infinite linear;
+  }
+  
+  .skeleton-title {
+    width: 60%;
+    height: 20px;
+  }
+  
+  .skeleton-line {
+    width: 90%;
+    height: 14px;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+  

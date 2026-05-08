@@ -1,0 +1,30 @@
+.equality-products-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 20px;
+    justify-content: center;
+}
+
+.equality-products-search {
+    display: flex;
+    justify-content: center;
+}
+
+.equality-products-search>* {
+    width: 100%;
+    max-width: 700px;
+    /* atau 500px atau sesuai desainmu */
+}
+
+em {
+    background-color: yellow;
+    font-style: normal;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+.equality-products-action {
+    display: flex;
+    justify-content: end;
+    margin: 0 20px 20px;
+}

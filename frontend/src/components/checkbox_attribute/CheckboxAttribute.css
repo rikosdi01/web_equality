@@ -1,0 +1,26 @@
+.checkbox-attribute {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 40px;
+}
+
+.checkbox-attribute input label {
+    accent-color: #007bff; /* Warna checkbox */
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.checkbox-attribute label {
+    color: #555;
+}
+
+.checkbox-attribute input[type="checkbox"]:checked+label {
+    font-weight: 500;
+    /* Menonjolkan elemen yang terpilih */
+    color: #007bff;
+}
+
+.checkbox-attribute input[type="checkbox"]:focus {
+    outline: 2px solid rgba(0, 123, 255, 0.3);
+}
